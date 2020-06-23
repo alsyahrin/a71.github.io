@@ -1,57 +1,55 @@
-/* Untuk Tablet */
-@media all and (max-width: 1000px) {
-  .lesson {
-    width: 50%;
-    margin-bottom: 50px;
+/*Untuk Tablet*/
+@media screen and (max-width: 730px) {
+  .features{
+	flex-direction:column;
+	align-content:center;
+	margin-top:50px;  
   }
-  
-  .top-wrapper h1 {
-    font-size: 32px;
-  }
-  
-  .heading h2 {
-    font-size: 20px;
-  }
+  .footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
 }
 
-/* Untuk Smartphone */
-@media all and (max-width: 670px) {
-  .lesson {
-    width: 100%;
+/*Untuk Smartphone*/
+@media screen and (max-width: 600px) {
+
+  .header-right a:not(:first-child) {display: none;}
+  .header-right a.icon {
+    float: right;
+    display: block;
+	margin-right:10px;
   }
   
-  footer {
-    text-align: center;
+  .header-right.responsive {
+	position: relative;
+	float: none;
   }
   
-  .btn {
-    width: 100%;
+  .header-right.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
   }
-  
-  .facebook {
-    margin-bottom: 10px;
-  }
-  
-  .top-wrapper {
+  .header-right.responsive a{
+    float: none;
+    display: block;
     text-align: left;
   }
-  
-  /* Tambahkan CSS untuk header-right */
-  .header-right{
-    display:  none;
-  }
-  
-  /* Tambahkan CSS untuk menu-icon */
-  .menu-icon{
-    display:  block;
-  }
-  .top-wrapper h1 {
-    font-size: 24px;
-    line-height: 36px;
-  }
-  
-  .top-wrapper p {
-    font-size: 14px;
-    line-height: 20px;
-  }
+  .features{
+	flex-direction:column;  
+	margin-top:50px;  
+  } 
 }
