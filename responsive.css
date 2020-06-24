@@ -1,10 +1,14 @@
-/*Untuk Tablet*/
-@media screen and (max-width: 730px) {
+@media (max-width: 1000px) {
+  /*Bagian Isi*/
   .features{
-	flex-direction:column;
-	align-content:center;
-	margin-top:50px;  
+	flex-wrap:wrap;
   }
+  .features li{
+	width:50%;
+	margin: 10px auto;
+  }
+  
+  /*Bagian Footer*/
   .footer-distributed{
 		font: bold 14px sans-serif;
 	}
@@ -23,9 +27,9 @@
 	}
 }
 
-/*Untuk Smartphone*/
-@media screen and (max-width: 600px) {
-
+@media (max-width: 670px) {
+  
+  /*Bagian Header*/
   .header-right a:not(:first-child) {display: none;}
   .header-right a.icon {
     float: right;
@@ -48,8 +52,16 @@
     display: block;
     text-align: left;
   }
+  
+  /*Bagian Isi*/
   .features{
 	flex-direction:column;  
-	margin-top:50px;  
-  } 
+  }
+  .features li{
+	margin:10px 0;
+  }
+  .features img{
+	width:100%;
+	height:auto;
+  }
 }
